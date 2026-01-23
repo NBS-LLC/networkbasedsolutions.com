@@ -10,34 +10,34 @@ CORE STYLES (low resolution, old devices)
 
 html,
 body {
-    height: 100%
+  height: 100%;
 }
 
 body {
-    font-family: "source-sans-pro", sans-serif;
-    font-size: 100%; /* Use device defaults, typically 16px. */
+  font-family: "source-sans-pro", sans-serif;
+  font-size: 100%; /* Use device defaults, typically 16px. */
 }
 
 a {
-    color: #BCE784;
-    font-weight: bold;
-    text-decoration: none;
+  color: #bce784;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 header {
-    color: #513B56;
-    font-size: larger;
-    text-align: center;
+  color: #513b56;
+  font-size: larger;
+  text-align: center;
 }
 
 p {
-    color: #513B56;
+  color: #513b56;
 }
 
 h1 {
-    color: #513B56;
-    font-family: "bebas-neue", sans-serif;
-    text-align: center;
+  color: #513b56;
+  font-family: "bebas-neue", sans-serif;
+  text-align: center;
 }
 
 /* --------------------------------- */
@@ -45,20 +45,20 @@ h1 {
 /* --------------------------------- */
 
 article {
-    font-size: 6vw;
-    padding: 1rem;
+  font-size: 6vw;
+  padding: 1rem;
 }
 
 .emote-winky-face {
-    display: inline-block;
+  display: inline-block;
 
-    -webkit-transform: translateX(1vw) translateY(-2vw) rotate(45deg);
-    -ms-transform: translateX(1vw) translateY(-2vw) rotate(45deg);
-    transform: translateX(1vw) translateY(-2vw) rotate(45deg);
+  -webkit-transform: translateX(1vw) translateY(-2vw) rotate(45deg);
+  -ms-transform: translateX(1vw) translateY(-2vw) rotate(45deg);
+  transform: translateX(1vw) translateY(-2vw) rotate(45deg);
 }
 
 .glow-green {
-    color: #BCE784;
+  color: #bce784;
 }
 
 /* --------------------------------- */
@@ -66,106 +66,105 @@ article {
 /* --------------------------------- */
 
 #dont-speak-geek {
-    background-color: #BCE784;
-    font-family: "verveine", sans-serif;
-    font-size: 10vw;
-    padding: 10vw 0;
-    text-align: center;
+  background-color: #bce784;
+  font-family: "verveine", sans-serif;
+  font-size: 10vw;
+  padding: 10vw 0;
+  text-align: center;
 }
 
 #dont-speak-geek > header {
-    color: #513B56;
+  color: #513b56;
 }
 
 #dont-speak-geek > p {
-    color: #348AA7;
-    margin: 0;
+  color: #348aa7;
+  margin: 0;
 }
 
 /* --------------------------------- */
 
 #nbs-your-lifesaver {
-    background-color: #FFFFFF;
-    color: #513B56;
-    font-family: "source-sans-pro", sans-serif;
+  background-color: #ffffff;
+  color: #513b56;
+  font-family: "source-sans-pro", sans-serif;
 
-    background-image: url("../_images/nbs-lifesaver-empty-faded-500px.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 50vw;
+  background-image: url("../_images/nbs-lifesaver-empty-faded-500px.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50vw;
 }
 
 #nbs-your-lifesaver > div {
-    text-align: center;
+  text-align: center;
 }
 
 #nbs-your-lifesaver p {
-    display: inline-block;
-    margin: 0;
-    text-align: left;
+  display: inline-block;
+  margin: 0;
+  text-align: left;
 }
 
 #nbs-your-lifesaver #call-to-action {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 #nbs-your-lifesaver #call-to-action > span:first-of-type {
-    margin: 0;
+  margin: 0;
 }
 
 #nbs-your-lifesaver #call-to-action > span {
-    display: block;
-    margin: 0;
-    margin-left: 15vw;
+  display: block;
+  margin: 0;
+  margin-left: 15vw;
 }
 
 #nbs-your-lifesaver #call-to-action > span:last-of-type {
-    margin-left: 45vw;
+  margin-left: 45vw;
 }
 
 /* --------------------------------- */
 
 #nbs-can-help {
-    background-color: #348AA7;
-    font-family: "verveine", sans-serif;
-    font-size: 8vw;
-    padding: 8vw 0;
-    text-align: center;
+  background-color: #348aa7;
+  font-family: "verveine", sans-serif;
+  font-size: 8vw;
+  padding: 8vw 0;
+  text-align: center;
 
-    background-image: url("../_images/nbs-bubbles-250px.png");
-    background-position: right 1rem bottom;
-    background-repeat: no-repeat;
-    background-size: 30vw;
+  background-image: url("../_images/nbs-bubbles-250px.png");
+  background-position: right 1rem bottom;
+  background-repeat: no-repeat;
+  background-size: 30vw;
 }
 
 #nbs-can-help .company-acronym {
-    color: #513B56;
+  color: #513b56;
 }
 
 #nbs-can-help > header {
-    color: #A4BAB7;
+  color: #a4bab7;
 }
 
 #nbs-can-help > p {
-    color: #513B56;
-    margin: 0;
+  color: #513b56;
+  margin: 0;
 }
 
 /* --------------------------------- */
 
 #how-nbs-helps {
-    background-color: #FFFFFF;
-    overflow: auto;
+  background-color: #ffffff;
+  overflow: auto;
 }
 
 #how-nbs-helps h1 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #how-nbs-helps p {
-    margin-top: 0;
-    text-align: justify;
-
+  margin-top: 0;
+  text-align: justify;
 }
 
 /* --------------------------------- */
@@ -174,12 +173,12 @@ article {
 
 .company-name-word::first-letter,
 .company-acronym {
-    color: #348AA7;
-    font-weight: bold;
+  color: #348aa7;
+  font-weight: bold;
 }
 
 .company-number {
-    color: #513B56;
+  color: #513b56;
 }
 
 /* -----------------------------------------------------------------------------
@@ -190,157 +189,157 @@ BREAKPOINT 1
 
 /* 500px @ 16px */
 @media all and (min-width: 31.25rem) {
-    #nbs-your-lifesaver {
-        background-image: url("../_images/nbs-lifesaver-empty-faded-800px.png");
-    }
+  #nbs-your-lifesaver {
+    background-image: url("../_images/nbs-lifesaver-empty-faded-800px.png");
+  }
 
-    #nbs-can-help {
-        background-size: 25vw;
-    }
+  #nbs-can-help {
+    background-size: 25vw;
+  }
 
-    #how-nbs-helps {
-        text-align: center;
-    }
+  #how-nbs-helps {
+    text-align: center;
+  }
 
-    #how-nbs-helps > div {
-        display: inline-block;
-        font-size: large;
-        margin: auto 0.5rem;
-        vertical-align: top;
-        width: 43vw;
-    }
+  #how-nbs-helps > div {
+    display: inline-block;
+    font-size: large;
+    margin: auto 0.5rem;
+    vertical-align: top;
+    width: 43vw;
+  }
 }
 
 /* 600px @ 16px */
 @media all and (min-width: 37.5rem) {
-    article {
-        font-size: 4vw;
-    }
+  article {
+    font-size: 4vw;
+  }
 
-    #nbs-your-lifesaver,
-    #nbs-can-help {
-        background-size: 20vw;
-        background-position: right 1rem center;
-    }
+  #nbs-your-lifesaver,
+  #nbs-can-help {
+    background-size: 20vw;
+    background-position: right 1rem center;
+  }
 
-    #nbs-your-lifesaver #call-to-action {
-        display: block;
-        text-align: center;
-    }
+  #nbs-your-lifesaver #call-to-action {
+    display: block;
+    text-align: center;
+  }
 
-    #nbs-your-lifesaver #call-to-action > span,
-    #nbs-your-lifesaver #call-to-action > span:last-of-type {
-        display: inline-block;
-        margin: 0;
-    }
+  #nbs-your-lifesaver #call-to-action > span,
+  #nbs-your-lifesaver #call-to-action > span:last-of-type {
+    display: inline-block;
+    margin: 0;
+  }
 }
 
 /* 800px @ 16px */
 @media all and (min-width: 50rem) {
-    #how-nbs-helps > div {
-        margin: auto 0.5rem;
-        width: 29vw;
-    }
+  #how-nbs-helps > div {
+    margin: auto 0.5rem;
+    width: 29vw;
+  }
 }
 
 /* 1000px @ 16px */
 @media all and (min-width: 62.5rem) {
-    article,
-    header {
-        text-align: left;
-    }
+  article,
+  header {
+    text-align: left;
+  }
 
-    .emote-winky-face {
-        -webkit-transform: translateX(1vw) translateY(-2vw) rotate(45deg);
-        -ms-transform: translateX(1vw) translateY(-2vw) rotate(45deg);
-        transform: translateX(0.25vw) translateY(-0.5vw) rotate(45deg);
-    }
+  .emote-winky-face {
+    -webkit-transform: translateX(1vw) translateY(-2vw) rotate(45deg);
+    -ms-transform: translateX(1vw) translateY(-2vw) rotate(45deg);
+    transform: translateX(0.25vw) translateY(-0.5vw) rotate(45deg);
+  }
 
-    #dont-speak-geek,
-    #nbs-can-help {
-        font-size: 4vw;
-        padding: 4rem;
-        text-align: left;
-    }
+  #dont-speak-geek,
+  #nbs-can-help {
+    font-size: 4vw;
+    padding: 4rem;
+    text-align: left;
+  }
 
-    #dont-speak-geek > p {
-        margin-top: -1vw;
-        margin-left: 12vw;
-    }
+  #dont-speak-geek > p {
+    margin-top: -1vw;
+    margin-left: 12vw;
+  }
 
-    #nbs-your-lifesaver {
-        background-position: right 15vw center;
-        background-size: 15vw;
-    }
+  #nbs-your-lifesaver {
+    background-position: right 15vw center;
+    background-size: 15vw;
+  }
 
-    #nbs-can-help > header,
-    #nbs-can-help > p {
-        text-align: right;
-    }
+  #nbs-can-help > header,
+  #nbs-can-help > p {
+    text-align: right;
+  }
 
-    #nbs-can-help {
-        background-position: right 10vw center;
-        background-size: 10vw;
-    }
+  #nbs-can-help {
+    background-position: right 10vw center;
+    background-size: 10vw;
+  }
 
-    #nbs-can-help > p {
-        margin-top: -1vw;
-        margin-right: 8vw;
-    }
+  #nbs-can-help > p {
+    margin-top: -1vw;
+    margin-right: 8vw;
+  }
 
-    #nbs-your-lifesaver,
-    #how-nbs-helps {
-        font-size: 3vw;
-    }
+  #nbs-your-lifesaver,
+  #how-nbs-helps {
+    font-size: 3vw;
+  }
 
-    #nbs-your-lifesaver > header,
-    #how-nbs-helps > header {
-        text-align: center;
-    }
+  #nbs-your-lifesaver > header,
+  #how-nbs-helps > header {
+    text-align: center;
+  }
 }
 
 /* 1200px @ 16px */
 @media all and (min-width: 75rem) {
-    #dont-speak-geek > header,
-    #dont-speak-geek > p {
-        font-size: 3vw;
-    }
+  #dont-speak-geek > header,
+  #dont-speak-geek > p {
+    font-size: 3vw;
+  }
 
-    #dont-speak-geek > p {
-        margin-top: -0.5vw;
-        margin-left: 7vw;
-    }
+  #dont-speak-geek > p {
+    margin-top: -0.5vw;
+    margin-left: 7vw;
+  }
 
-    #nbs-your-lifesaver {
-        background-size: 9vw;
-        background-position: right 27vw center;
-    }
+  #nbs-your-lifesaver {
+    background-size: 9vw;
+    background-position: right 27vw center;
+  }
 
-    #nbs-your-lifesaver > header,
-    #nbs-your-lifesaver p {
-        font-size: 2vw;
-    }
+  #nbs-your-lifesaver > header,
+  #nbs-your-lifesaver p {
+    font-size: 2vw;
+  }
 
-    #nbs-your-lifesaver #call-to-action {
-        margin-bottom: 0;
-    }
+  #nbs-your-lifesaver #call-to-action {
+    margin-bottom: 0;
+  }
 
-    #nbs-can-help {
-        background-size: 8vw;
-        background-position: right 6vw center;
-    }
+  #nbs-can-help {
+    background-size: 8vw;
+    background-position: right 6vw center;
+  }
 
-    #nbs-can-help > header,
-    #nbs-can-help > p {
-        font-size: 3vw;
-    }
+  #nbs-can-help > header,
+  #nbs-can-help > p {
+    font-size: 3vw;
+  }
 
-    #nbs-can-help > p {
-        margin-top: -0.5vw;
-        margin-right: 2vw;
-    }
+  #nbs-can-help > p {
+    margin-top: -0.5vw;
+    margin-right: 2vw;
+  }
 
-    #how-nbs-helps > header {
-        font-size: 2vw;
-    }
+  #how-nbs-helps > header {
+    font-size: 2vw;
+  }
 }
