@@ -1,7 +1,6 @@
 # Network Based Solutions
 
-[networkbasedsolutions.com](https://networkbasedsolutions.com) /
-[nbsllc.tech](http://nbsllc.tech)
+[networkbasedsolutions.com](https://networkbasedsolutions.com) / [nbsllc.tech](http://nbsllc.tech)
 
 ## Development
 

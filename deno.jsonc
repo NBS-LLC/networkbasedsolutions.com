@@ -1,4 +1,7 @@
 {
+  "fmt": {
+    "lineWidth": 120
+  },
   "tasks": {
     "fmt:check": "deno fmt --check",
     "dev": "deno run --allow-net --allow-read jsr:@std/http/file-server src/"
