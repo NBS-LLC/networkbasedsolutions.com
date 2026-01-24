@@ -4,7 +4,8 @@
   },
   "tasks": {
     "build": "deno task check && deno task dist",
-    "check": "deno check && deno task lint:check && deno task fmt:check",
+    "check": "deno task compile:check && deno task lint:check && deno task fmt:check",
+    "compile:check": "deno check",
     "deploy": "deno task build && deno run --allow-net --allow-read --allow-env --env tools/deploy.ts",
     "dev": "deno run --allow-net --allow-read jsr:@std/http/file-server src/",
     "dev:dist": "deno task build && deno run --allow-net --allow-read jsr:@std/http/file-server dist/",

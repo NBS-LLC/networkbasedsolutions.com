@@ -21,6 +21,9 @@ jobs:
           cache: true
           deno-version-file: .tool-versions
 
+      - name: Compile Check
+        run: deno task compile:check
+
       - name: Lint Check
         run: deno task lint:check
 
