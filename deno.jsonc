@@ -3,7 +3,10 @@
     "lineWidth": 120
   },
   "tasks": {
+    "check": "deno task lint && deno task fmt:check",
+    "dev": "deno run --allow-net --allow-read jsr:@std/http/file-server src/",
+    "dist": "deno run --allow-read --allow-write --allow-env tools/dist.ts",
     "fmt:check": "deno fmt --check",
-    "dev": "deno run --allow-net --allow-read jsr:@std/http/file-server src/"
+    "lint": "deno lint"
   }
 }
