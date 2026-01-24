@@ -1,0 +1,28 @@
+name: check
+
+on:
+  pull_request:
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v6
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          cache: true
+          deno-version-file: .tool-versions
+
+      - name: Lint Check
+        run: deno task lint:check
+
+      - name: Format Check
+        run: deno task fmt:check
