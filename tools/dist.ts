@@ -2,7 +2,7 @@ import { copy, emptyDir } from "@std/fs";
 import { resolve } from "@std/path";
 
 function getVersion(): string {
-  const semver = Deno.env.get("SEMVER");
+  const semver = Deno.env.get("TAG")?.replace(/^v/, "");
   if (semver) {
     return semver;
   }
