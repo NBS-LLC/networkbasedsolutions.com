@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@std/fs": "jsr:@std/fs",
+    "@std/path": "jsr:@std/path"
+  }
+}
