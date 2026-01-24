@@ -1,0 +1,38 @@
+name: deploy-prod
+
+on:
+  release:
+    types:
+      - released
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  production:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: prod
+      url: https://networkbasedsolutions.com
+
+    env:
+      TAG: ${{ github.ref_name }}
+      SFTP_HOST: ${{ vars.SFTP_HOST }}
+      SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
+      SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+      SFTP_PATH: ${{ vars.SFTP_PATH }}
+
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v6
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          cache: true
+          deno-version-file: .tool-versions
+
+      - name: Deploy to Production
+        run: deno task deploy
