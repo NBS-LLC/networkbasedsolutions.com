@@ -19,3 +19,18 @@
 ```bash
 > deno task dev
 ```
+
+### Deploy
+
+Ensure the following environment variables are set:
+
+```env
+SFTP_HOST
+SFTP_USERNAME
+SFTP_PASSWORD
+SFTP_PATH
+```
+
+```bash
+> deno task deploy
+```
