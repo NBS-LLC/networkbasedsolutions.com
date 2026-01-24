@@ -1,14 +1,27 @@
 import { join } from "@std/path";
 // @deno-types="npm:@types/ssh2-sftp-client"
-import SftpClient from "ssh2-sftp-client";
+import SftpClient, { ConnectOptions } from "ssh2-sftp-client";
 
-const config = {
+interface DeployOptions extends ConnectOptions {
+  remoteDir: string | undefined;
+  localDir: string;
+  exclude: string[];
+}
+
+const config: DeployOptions = {
   host: Deno.env.get("SFTP_HOST"),
   username: Deno.env.get("SFTP_USERNAME"),
   password: Deno.env.get("SFTP_PASSWORD"),
   remoteDir: Deno.env.get("SFTP_PATH"),
   localDir: "./dist",
   exclude: [".dh-diag"],
+  algorithms: {
+    cipher: [
+      "aes128-ctr",
+      "aes192-ctr",
+      "aes256-ctr",
+    ],
+  },
 };
 
 if (!config.host || !config.username || !config.password || !config.remoteDir) {
