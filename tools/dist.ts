@@ -23,13 +23,13 @@ async function main() {
   const srcDir = resolve(Deno.cwd(), "src");
   const distDir = resolve(Deno.cwd(), "dist");
 
-  console.log("Cleaning dist directory...");
+  console.log("Cleaning dist directory.");
   await emptyDir(distDir);
 
-  console.log(`Copying ${srcDir} to ${distDir}...`);
+  console.log(`Copying ${srcDir} to ${distDir}.`);
   await copy(srcDir, distDir, { overwrite: true });
 
-  console.log(`Injecting version ${version} into index.html...`);
+  console.log(`Injecting version ${version} into index.html.`);
   const indexPath = resolve(distDir, "index.html");
   let indexHtml = await Deno.readTextFile(indexPath);
   indexHtml = indexHtml.replace("{version}", version);
