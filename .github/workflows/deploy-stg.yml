@@ -36,3 +36,10 @@ jobs:
 
       - name: Deploy to Staging
         run: deno task deploy
+
+      - name: Archive Artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          if-no-files-found: error
+          name: nbs-stg-${{ env.TAG }}
+          path: dist/
