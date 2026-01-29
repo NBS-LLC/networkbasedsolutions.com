@@ -15,9 +15,10 @@ jobs:
 
     environment:
       name: prod
-      url: https://networkbasedsolutions.com
+      url: ${{ env.DEPLOYMENT_URL }}
 
     env:
+      DEPLOYMENT_URL: https://networkbasedsolutions.com
       TAG: ${{ github.ref_name }}
       SFTP_HOST: ${{ vars.SFTP_HOST }}
       SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
@@ -37,7 +38,11 @@ jobs:
       - name: Deploy to Production
         run: deno task deploy
 
+      - name: Check Deployment
+        run: deno task deploy:check "${{ env.DEPLOYMENT_URL }}" "${{ env.TAG }}"
+
       - name: Archive Artifacts
+        if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v6
         with:
           if-no-files-found: error
