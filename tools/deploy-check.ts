@@ -3,10 +3,10 @@ import { DOMParser } from "@b-fuze/deno-dom";
 
 const scriptName = import.meta.url.split("/").pop();
 const url = Deno.args[0];
-const semver = Deno.env.get("TAG")?.replace(/^v/, "");
+const semver = Deno.args[1]?.replace(/^v/, "");
 
 if (!url || !semver) {
-  console.error(`Usage: TAG=v1.2.3 deno run --allow-net --allow-env ${scriptName} <url>`);
+  console.error(`Usage: deno run --allow-net --allow-env ${scriptName} <url> <tag>`);
   Deno.exit(1);
 }
 
