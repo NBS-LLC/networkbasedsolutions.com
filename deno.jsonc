@@ -7,6 +7,7 @@
     "check": "deno task compile:check && deno task lint:check && deno task fmt:check",
     "compile:check": "deno check",
     "deploy": "deno task build && deno run --allow-net --allow-read --allow-env --env tools/deploy.ts",
+    "deploy:check": "deno run --allow-net --allow-env tools/deploy-check.ts",
     "dev": "deno run --allow-net --allow-read jsr:@std/http/file-server src/",
     "dev:dist": "deno task build && deno run --allow-net --allow-read jsr:@std/http/file-server dist/",
     "dist": "deno run --allow-read --allow-write --allow-env tools/dist.ts",

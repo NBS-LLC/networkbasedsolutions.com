@@ -2,6 +2,8 @@
   "imports": {
     "@std/fs": "jsr:@std/fs",
     "@std/path": "jsr:@std/path",
-    "ssh2-sftp-client": "npm:ssh2-sftp-client"
+    "@std/assert": "jsr:@std/assert",
+    "ssh2-sftp-client": "npm:ssh2-sftp-client",
+    "@b-fuze/deno-dom": "jsr:@b-fuze/deno-dom"
   }
 }
