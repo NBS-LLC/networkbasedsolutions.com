@@ -201,7 +201,7 @@ BREAKPOINTS
     text-align: center;
   }
 
-  #how-nbs-helps > div {
+  #how-nbs-helps > section {
     display: inline-block;
     font-size: large;
     margin: auto 0.5rem;
@@ -236,7 +236,7 @@ BREAKPOINTS
 
 /* 800px @ 16px */
 @media all and (min-width: 50rem) {
-  #how-nbs-helps > div {
+  #how-nbs-helps > section {
     margin: auto 0.5rem;
     width: 29vw;
   }
