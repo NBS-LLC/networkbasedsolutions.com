@@ -1,18 +1,30 @@
 {
   "version": "5",
   "specifiers": {
+    "jsr:@b-fuze/deno-dom@*": "0.1.56",
+    "jsr:@std/assert@*": "1.0.13",
     "jsr:@std/fs@*": "1.0.22",
     "jsr:@std/internal@^1.0.12": "1.0.12",
+    "jsr:@std/internal@^1.0.6": "1.0.12",
     "jsr:@std/path@*": "1.1.4",
     "jsr:@std/path@^1.1.4": "1.1.4",
     "npm:@types/ssh2-sftp-client@*": "9.0.6",
     "npm:ssh2-sftp-client@*": "12.0.1"
   },
   "jsr": {
+    "@b-fuze/deno-dom@0.1.56": {
+      "integrity": "8030e2dc1d8750f1682b53462ab893d9c3470f2287feecbe22f44a88c54ab148"
+    },
+    "@std/assert@1.0.13": {
+      "integrity": "ae0d31e41919b12c656c742b22522c32fb26ed0cba32975cb0de2a273cb68b29",
+      "dependencies": [
+        "jsr:@std/internal@^1.0.6"
+      ]
+    },
     "@std/fs@1.0.22": {
       "integrity": "de0f277a58a867147a8a01bc1b181d0dfa80bfddba8c9cf2bacd6747bcec9308",
       "dependencies": [
-        "jsr:@std/internal",
+        "jsr:@std/internal@^1.0.12",
         "jsr:@std/path@^1.1.4"
       ]
     },
@@ -22,7 +34,7 @@
     "@std/path@1.1.4": {
       "integrity": "1d2d43f39efb1b42f0b1882a25486647cb851481862dc7313390b2bb044314b5",
       "dependencies": [
-        "jsr:@std/internal"
+        "jsr:@std/internal@^1.0.12"
       ]
     }
   },
@@ -142,6 +154,8 @@
     "members": {
       "tools": {
         "dependencies": [
+          "jsr:@b-fuze/deno-dom@*",
+          "jsr:@std/assert@*",
           "jsr:@std/fs@*",
           "jsr:@std/path@*",
           "npm:ssh2-sftp-client@*"
