@@ -343,3 +343,14 @@ BREAKPOINTS
     font-size: 2vw;
   }
 }
+
+@media print {
+  body {
+    print-color-adjust: exact;
+  }
+
+  #dont-speak-geek {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+}
