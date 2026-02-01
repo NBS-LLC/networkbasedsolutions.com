@@ -61,7 +61,7 @@ article {
   color: #bce784;
 }
 
-.company-qrcode {
+.company-flyer-qrcode {
   display: none;
 }
 
@@ -353,7 +353,7 @@ BREAKPOINTS
     print-color-adjust: exact;
   }
 
-  .company-qrcode {
+  .company-flyer-qrcode {
     display: block !important;
     position: fixed;
     bottom: 0;
