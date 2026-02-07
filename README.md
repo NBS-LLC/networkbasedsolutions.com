@@ -34,3 +34,7 @@ SFTP_PATH
 ```bash
 > deno task deploy
 ```
+
+## Notes
+
+- QR code generated via: https://www.nayuki.io/page/qr-code-generator-library
