@@ -29,7 +29,7 @@
       content="Network Based Solutions specializes in mobile / laptop / desktop support, app / website design, and software training. NBS is your technology lifesaver. #NBShelps"
     />
 
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!-- Ensure IE never uses compatibility mode. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,12 +37,32 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="shortcut icon" href="favicon.ico" />
 
-    <script src="https://use.typekit.net/okl6hvr.js"></script>
-    <script>
-      try {
-        Typekit.load({ async: true });
-      } catch (e) {
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="dns-prefetch" href="https://use.typekit.net" />
+    <link rel="stylesheet" href="https://use.typekit.net/okl6hvr.css" />
+
+    <style>
+      .wf-loading body {
+        visibility: hidden;
       }
+    </style>
+
+    <!-- Necessary inline script to prevent font load flicker. -->
+    <script>
+      (function (d) {
+        d.classList.add("wf-loading");
+        var t = setTimeout(function () {
+          d.classList.remove("wf-loading");
+          d.classList.add("wf-inactive");
+        }, 3000);
+        if (document.fonts) {
+          document.fonts.ready.then(function () {
+            clearTimeout(t);
+            d.classList.remove("wf-loading");
+            d.classList.add("wf-active");
+          });
+        }
+      })(document.documentElement);
     </script>
 
     <link rel="stylesheet" href="_css/normalize.css" />
@@ -68,7 +88,8 @@
           </p>
 
           <p>
-            Give us a call or text: <a href="tel:+1-503-606-6508" class="company-number">503-606-6508</a>
+            Give us a call or text:
+            <a href="tel:+1-503-606-6508" class="company-number">503-606-6508</a>
           </p>
         </div>
       </article>
@@ -76,7 +97,8 @@
       <article id="nbs-can-help">
         <header>Feeling under water?</header>
         <p>
-          <span class="company-acronym">NBS</span> can <span class="glow-green">help</span> you back to shore.
+          <span class="company-acronym">NBS</span> can
+          <span class="glow-green">help</span> you back to shore.
         </p>
       </article>
 
