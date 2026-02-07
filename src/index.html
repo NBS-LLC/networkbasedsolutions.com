@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-106843452-1"
-    ></script>
-
     <script>
-      window.dataLayer = window.dataLayer || [];
+      const PROD_ID = "G-QPF9MEWB0F";
+      const SANDBOX_ID = "G-V7EWRS0697";
 
+      const MEASUREMENT_ID = window.location.hostname === "www.networkbasedsolutions.com"
+        ? PROD_ID
+        : SANDBOX_ID;
+
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
+      document.head.appendChild(script);
+
+      window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
 
       gtag("js", new Date());
-      gtag("config", "UA-106843452-1");
+      gtag("config", MEASUREMENT_ID);
     </script>
 
     <title>
