@@ -240,6 +240,10 @@ ul {
   text-align: center;
 }
 
+.platform-group h3 {
+  margin-bottom: 1.5rem;
+}
+
 .platform-group ul {
   list-style: none;
   padding: 0;
