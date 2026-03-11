@@ -158,15 +158,21 @@ ul {
 .hero h1 {
   color: var(--color-secondary);
   margin-bottom: 0.5rem;
+  white-space: nowrap;
+  font-size: clamp(1.8rem, 8.5vw, 4rem);
+  letter-spacing: -0.02em;
 }
 
 .tagline {
-  font-size: 1.5rem;
+  font-size: clamp(1.1rem, 5vw, 1.5rem);
   font-weight: bold;
   margin-bottom: 2rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
+
+#platforms h2 {}
 
 .intro {
   font-size: 1.2rem;
