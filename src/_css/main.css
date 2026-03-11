@@ -75,8 +75,7 @@ PROJECT STYLES
   --color-accent: #513b56; /* Dark Purple */
   --color-bg: #ffffff;
   --color-bg-alt: #f4f7f8;
-  --color-text: #333333;
-  --color-text-light: #666666;
+  --color-text: #513b56;
   --container-width: 1000px;
   --spacing: 1.5rem;
 }
