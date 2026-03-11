@@ -180,6 +180,16 @@ ul {
   color: #e0e0e0;
 }
 
+@media (min-width: 580px) {
+  .intro {
+    max-width: 800px;
+  }
+  .intro-line {
+    display: block;
+    margin-top: 0.5rem;
+  }
+}
+
 .btn {
   display: inline-block;
   background-color: var(--color-secondary);
