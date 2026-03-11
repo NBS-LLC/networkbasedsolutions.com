@@ -284,6 +284,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   box-shadow: 0 10px 20px rgba(52, 138, 167, 0.3);
+  flex-shrink: 0;
 }
 
 .price-box p {
