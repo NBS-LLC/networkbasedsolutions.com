@@ -268,7 +268,7 @@ ul {
 .price-box {
   background: var(--color-primary);
   color: #fff;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -276,6 +276,12 @@ ul {
   flex-direction: column;
   justify-content: center;
   box-shadow: 0 10px 20px rgba(52, 138, 167, 0.3);
+}
+
+.price-box p {
+  white-space: nowrap;
+  font-size: 0.9rem;
+  margin-bottom: 0;
 }
 
 .price {
