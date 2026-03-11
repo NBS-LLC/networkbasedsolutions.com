@@ -357,9 +357,14 @@ ul {
 .footer {
   background-color: var(--color-accent);
   color: #fff;
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
-  font-size: 0.9rem;
+}
+
+.footer p {
+  font-size: clamp(0.7rem, 3.5vw, 0.9rem);
+  white-space: nowrap;
+  margin-bottom: 0;
 }
 
 /* --------------------------------- */
