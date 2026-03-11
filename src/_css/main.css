@@ -162,7 +162,7 @@ ul {
   letter-spacing: 0.05em;
 }
 
-.hero h1 .first-letter {
+.brand-letter {
   color: var(--color-primary);
 }
 
@@ -170,7 +170,6 @@ ul {
   font-size: clamp(1.1rem, 5vw, 1.5rem);
   font-weight: bold;
   margin-bottom: 2rem;
-  text-transform: uppercase;
   letter-spacing: 1px;
   white-space: nowrap;
 }
