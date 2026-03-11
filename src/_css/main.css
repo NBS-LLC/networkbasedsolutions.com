@@ -160,7 +160,7 @@ ul {
   margin-bottom: 0.5rem;
   white-space: nowrap;
   font-size: clamp(1.8rem, 8.5vw, 4rem);
-  letter-spacing: -0.02em;
+  letter-spacing: 0.05em;
 }
 
 .tagline {
