@@ -162,6 +162,10 @@ ul {
   letter-spacing: 0.05em;
 }
 
+.hero h1 .first-letter {
+  color: var(--color-primary);
+}
+
 .tagline {
   font-size: clamp(1.1rem, 5vw, 1.5rem);
   font-weight: bold;
