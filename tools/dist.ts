@@ -32,7 +32,7 @@ async function main() {
   console.log(`Injecting version ${version} into index.html.`);
   const indexPath = resolve(distDir, "index.html");
   let indexHtml = await Deno.readTextFile(indexPath);
-  indexHtml = indexHtml.replace("{version}", version);
+  indexHtml = indexHtml.replace(/{version}/g, version);
   await Deno.writeTextFile(indexPath, indexHtml);
 
   console.log(`Build complete. Version: ${version}`);
