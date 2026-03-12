@@ -322,6 +322,32 @@ ul {
 }
 
 /* --------------------------------- */
+/* About                             */
+/* --------------------------------- */
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.about-image {
+  border-radius: 12px;
+  max-width: 300px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+/* --------------------------------- */
 /* Contact                           */
 /* --------------------------------- */
 
