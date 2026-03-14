@@ -231,7 +231,6 @@ ul {
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
   border-top: 5px solid var(--color-secondary);
 }
 
@@ -319,6 +318,7 @@ ul {
   padding: 2rem;
   border-radius: 12px;
   color: var(--color-accent);
+  text-align: left;
 }
 
 /* --------------------------------- */
